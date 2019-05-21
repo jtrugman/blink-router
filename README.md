@@ -8,5 +8,5 @@ This repo contains code/scripts for
 - Wifi Mesh (Wifi mesh configs using the BATMAN wifi mesh)
 - Traffic Monitoring & Collection (Script to run tcpdump and store pcap or pcapng files on portable hardrive or NAS attached to router)
 
-Before running programs make sure to update router (opkg update)
-And to install required programs for example to install tcpdump (opkg install tcpdump)
+1. Before running programs make sure to update router (opkg update)
+2. And to install required programs for example to install tcpdump (opkg install tcpdump)
