@@ -1,0 +1,27 @@
+
+config wifi-device 'radio0'
+        option type 'mac80211'
+        option path 'platform/qca953x_wmac'
+        option hwmode '11ng'
+        option channel '6'
+        option noscan '1'
+        option txpower '20'
+        option htmode 'HT40-'
+
+config wifi-iface 'default_radio0'
+        option device 'radio0'
+        option network 'lan'
+        option mode 'ap'
+        option encryption 'psk-mixed'
+        option wds '1'
+        option ifname 'wlan0'
+        option ssid 'blinkNode3'
+        option key 'enter1234'
+
+config wifi-iface
+       option device     'radio0'
+       option mode       'ap'
+       option network    'blink'
+       option ssid       'blink'
+       option encryption 'none'
+

@@ -1,0 +1,1 @@
+sudo ssh-keygen -f "/home/parallels/.ssh/known_hosts" -R 192.168.8.1

@@ -1,0 +1,43 @@
+ 
+config interface 'loopback'
+        option ifname 'lo'
+        option proto 'static'
+        option ipaddr '127.0.0.1'
+        option netmask '255.0.0.0'
+
+config globals 'globals'
+        option ula_prefix 'fd0f:e446:1a05::/48'
+
+config interface 'lan'
+        option type 'bridge'
+        option ifname 'eth1'
+        option proto 'static'
+        option netmask '255.255.255.0'
+        option ip6assign '60'
+        option hostname 'GL-AR300M-6cf'
+        option ipaddr '192.168.8.1'
+
+config interface 'wan'
+        option ifname 'eth0'
+        option proto 'dhcp'
+        option hostname 'GL-AR300M-6cf'
+
+config interface 'wan6'
+        option ifname 'eth0'
+        option proto 'dhcpv6'
+
+                                                  
+                                                                                
+config interface 'mesh'
+        option ifname 'adhoc0'
+        option mtu '1528'
+        option proto 'batadv'
+        option mesh 'bat0'
+ 
+#Add the mb bridge
+config interface mb
+        option ifname   bat0
+        option type     bridge
+        option proto    static
+        option ipaddr   192.168.99.26
+        option netmask  255.255.255.0                     

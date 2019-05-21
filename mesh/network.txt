@@ -1,0 +1,6 @@
+config interface 'nwi_mesh0'
+        option ifname 'mesh0'
+        option proto 'batadv'
+        option mesh 'bat0'
+#       option routing_algo 'BATMAN_V'
+        option mtu '2304'

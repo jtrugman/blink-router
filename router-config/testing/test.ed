@@ -1,0 +1,6 @@
+/baz
+.t.
+s/baz/elephants
+w
+q
+
